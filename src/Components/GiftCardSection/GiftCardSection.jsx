@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const GiftCardSection = () => {
   const [selectedDenomination, setSelectedDenomination] = useState(500);
@@ -60,7 +61,6 @@ const GiftCardSection = () => {
           </div>
         </div>
 
-        {/* Gift Checkbox */}
         <div className="mb-4">
           <input
             type="checkbox"
@@ -72,9 +72,13 @@ const GiftCardSection = () => {
         </div>
 
         {/* Add to Cart Button */}
-        <button className="bg-black text-white px-40 py-3  w[100px] hover:bg-gray-800">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="bg-black text-white px-40 py-3  w[100px] hover:bg-gray-800"
+        >
           Add to cart
-        </button>
+        </motion.button>
       </div>
     </div>
   );

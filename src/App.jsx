@@ -10,6 +10,8 @@ import GiftCardSection from "./Components/GiftCardSection/GiftCardSection";
 import AdultSection from "./Components/AdultCollections/AdultCollections";
 import FamilyCollection from "./Components/FamilyCollection/FamilyCollection";
 import BestsellingKidsTshirts from "./Components/BestsellingKidsTshirt/BestSellingKidsTshirts";
+import BestsellingAdultTshirts from "./Components/BestSellingAdultTshirts/BestSellingAdultTshirt";
+import FeaturesSection from "./Components/FeatureSection/FeatureSection";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <AdultSection />
       <FamilyCollection />
       <BestsellingKidsTshirts />
+      <BestsellingAdultTshirts />
+      <FeaturesSection />
     </div>
   );
 }

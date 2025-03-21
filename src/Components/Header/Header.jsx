@@ -1,72 +1,5 @@
-// import React from "react";
-// import { useState } from "react";
-// const images = [
-//   "https://ecommerce-1-0-main-frontend.vercel.app/img/mainbanner1-1680x900.jpg",
-//   "https://ecommerce-1-0-main-frontend.vercel.app/img/mainbanner2-1680x900.jpg",
-//   "https://ecommerce-1-0-main-frontend.vercel.app/img/mainbanner2-1680x900.jpg",
-//   "https://ecommerce-1-0-main-frontend.vercel.app/img/mainbanner2-1680x900.jpg",
-//   "https://ecommerce-1-0-main-frontend.vercel.app/img/mainbanner1-1680x900.jpg",
-// ];
-
-// function Header() {
-//   const [Current, setCurrent] = useState(0);
-
-//   const nextSlide = () => {
-//     setCurrent(Current === images.length - 1 ? 0 : Current + 1);
-//   };
-//   const prevSlide = () => {
-//     setCurrent(Current === 0 ? images.length - 1 : Current - 1);
-//   };
-//   return (
-//     <div>
-//       <div className="flex justify-evenly items-center p-5">
-//         <div className="left_arrow" onClick={prevSlide}>
-//           <svg
-//             xmlns="http://www.w3.org/2000/svg"
-//             fill="none"
-//             viewBox="0 0 24 24"
-//             strokeWidth={1.5}
-//             stroke="currentColor"
-//             className="size-6"
-//           >
-//             <path
-//               strokeLinecap="round"
-//               strokeLinejoin="round"
-//               d="M15.75 19.5 8.25 12l7.5-7.5"
-//             />
-//           </svg>
-//         </div>
-//         <div className="images">
-//           {images.map(
-//             (item, index) =>
-//               Current === index && (
-//                 <img className="h-130 w-300" key={index} src={item} alt="img" />
-//               )
-//           )}
-//         </div>
-//         <div className="right_arrow" onClick={nextSlide}>
-//           <svg
-//             xmlns="http://www.w3.org/2000/svg"
-//             fill="none"
-//             viewBox="0 0 24 24"
-//             strokeWidth={1.5}
-//             stroke="currentColor"
-//             className="size-6"
-//           >
-//             <path
-//               strokeLinecap="round"
-//               strokeLinejoin="round"
-//               d="m8.25 4.5 7.5 7.5-7.5 7.5"
-//             />
-//           </svg>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Header;
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const images = [
   { src: "src/assets/images/4.png" },
@@ -115,9 +48,13 @@ function Header() {
                   alt={`Slide ${index + 1}`}
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/30 text-white">
-                  <button className="bg-black px-6 py-2 mt-90 text-white font-semibold hover:bg-gray-800 transition">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.1 }}
+                    className="bg-black px-6 py-2 mt-90 text-white font-semibold hover:bg-black transition"
+                  >
                     Shop Now
-                  </button>
+                  </motion.button>
                 </div>
               </div>
             )

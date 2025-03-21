@@ -4,12 +4,12 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import { motion } from "framer-motion";
 
-export default function BestsellingKidsTshirts() {
+export default function BestsellingAdultTshirts() {
   const tshirts = [
     {
       id: 1,
       name: "Mazya Taalavar - Light Blue - Unisex Kids T-shirt",
-      image: "src/assets/images/gulachipink.webp",
+      image: "src/assets/images/adult1.webp",
       originalPrice: 599,
       discountedPrice: 399,
       isOnSale: true,
@@ -17,7 +17,7 @@ export default function BestsellingKidsTshirts() {
     {
       id: 2,
       name: "Fast And Curious - White - Unisex Kids T-shirt",
-      image: "src/assets/images/paa.webp",
+      image: "src/assets/images/adult2.webp",
       originalPrice: 599,
       discountedPrice: 399,
       isOnSale: true,
@@ -25,7 +25,7 @@ export default function BestsellingKidsTshirts() {
     {
       id: 3,
       name: "Pasara - Orange - Unisex Kids T-shirt",
-      image: "src/assets/images/kid1.webp",
+      image: "src/assets/images/adult3webp.webp",
       originalPrice: 599,
       discountedPrice: 399,
       isOnSale: true,
@@ -33,7 +33,7 @@ export default function BestsellingKidsTshirts() {
     {
       id: 3,
       name: "Pasara - Orange - Unisex Kids T-shirt",
-      image: "src/assets/images/kid2.webp",
+      image: "src/assets/images/adult4.webp",
       originalPrice: 599,
       discountedPrice: 399,
       isOnSale: true,
@@ -41,7 +41,7 @@ export default function BestsellingKidsTshirts() {
     {
       id: 3,
       name: "Pasara - Orange - Unisex Kids T-shirt",
-      image: "src/assets/images/kid3.webp",
+      image: "src/assets/images/adult5.webp",
       originalPrice: 599,
       discountedPrice: 399,
       isOnSale: true,
@@ -49,7 +49,7 @@ export default function BestsellingKidsTshirts() {
     {
       id: 4,
       name: "Thalaivi - Yellow - Unisex Kids T-shirt",
-      image: "src/assets/images/kid4.webp",
+      image: "src/assets/images/adult6.webp",
       originalPrice: 599,
       discountedPrice: 399,
       isOnSale: true,
@@ -57,7 +57,7 @@ export default function BestsellingKidsTshirts() {
     {
       id: 4,
       name: "Thalaivi - Yellow - Unisex Kids T-shirt",
-      image: "src/assets/images/kid5.webp",
+      image: "src/assets/images/adult7.webp",
       originalPrice: 599,
       discountedPrice: 399,
       isOnSale: true,
@@ -65,23 +65,7 @@ export default function BestsellingKidsTshirts() {
     {
       id: 4,
       name: "Thalaivi - Yellow - Unisex Kids T-shirt",
-      image: "src/assets/images/kid6.webp",
-      originalPrice: 599,
-      discountedPrice: 399,
-      isOnSale: true,
-    },
-    {
-      id: 4,
-      name: "Thalaivi - Yellow - Unisex Kids T-shirt",
-      image: "src/assets/images/kid7.webp",
-      originalPrice: 599,
-      discountedPrice: 399,
-      isOnSale: true,
-    },
-    {
-      id: 4,
-      name: "Thalaivi - Yellow - Unisex Kids T-shirt",
-      image: "src/assets/images/kid8.webp",
+      image: "src/assets/images/adult8.webp",
       originalPrice: 599,
       discountedPrice: 399,
       isOnSale: true,
